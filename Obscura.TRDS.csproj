@@ -383,6 +383,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Character.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Features\Fly.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

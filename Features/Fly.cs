@@ -5,7 +5,7 @@ namespace Obscura.TRDS
     internal class Fly : MonoBehaviour
     {
         private Rigidbody rb;
-        private float flySpeed = 10f;
+        private float flySpeed = 20f;
 
         void Start()
         {
@@ -18,7 +18,7 @@ namespace Obscura.TRDS
 
         void Update()
         {
-            // Si script désactivé via Main, ne fait rien
+            // if script disable with Main, do nothing
             if (!enabled)
                 return;
 

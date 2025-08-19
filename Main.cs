@@ -1,4 +1,5 @@
 ﻿using MelonLoader;
+using Obscura.TRDS.Features;
 using UnityEngine;
 
 [assembly: MelonInfo(typeof(Obscura.TRDS.Main), "Obscura.TRDS", "1.0.0", "Saucisson")]
@@ -13,9 +14,13 @@ namespace Obscura.TRDS
         private bool showMenu = true;
 
         private int selectedTab = 0;
-        private string[] tabs = { "Fly", "Other" }; // next: muscles
+        private string[] tabs = { "Fly", "Character" };
 
         private Rect windowRect = new Rect(20, 20, 300, 200);
+
+        public override void OnInitializeMelon()
+        {
+        }
 
         public override void OnGUI()
         {
@@ -47,8 +52,8 @@ namespace Obscura.TRDS
                     }
                     break;
 
-                case 1: // Other
-                    GUI.Label(new Rect(10, 70, 200, 20), "Future features here...");
+                case 1: // Character
+                    Character.DrawCharacterTab(player);
                     break;
             }
 
@@ -59,6 +64,8 @@ namespace Obscura.TRDS
         {
             if (Input.GetKeyDown(KeyCode.F5))
                 showMenu = !showMenu;
+
+            Character.UpdateCharacterFeatures(player);
 
             if (player == null)
             {
@@ -76,7 +83,7 @@ namespace Obscura.TRDS
                     if (rb != null)
                         rb.useGravity = !flyEnabled;
 
-                    MelonLogger.Msg("Ragdoll Fly attaché au joueur.");
+                    MelonLogger.Msg("Player object found and components initialized.");
                 }
             }
         }
