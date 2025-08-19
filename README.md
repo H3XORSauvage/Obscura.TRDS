@@ -1,16 +1,28 @@
-# Obscura.TRDS Mod Menu
+# Obscura.TRDS  
 
-Un mod menu pour le jeu **Totally Reliable Delivery Service**.
+A custom mod menu for **Totally Reliable Delivery Service**.  
 
-## Fonctionnalités
+---
 
-- **Fly Mode** : Permet de voler librement sur la carte.
-- **Menu en jeu** : Une interface simple pour activer et désactiver les fonctionnalités.
+## ✨ Features  
 
-## Comment l'utiliser
+- **Fly Mode** — Freely fly around the map.  
+- **Invisibility** — Prevents knockouts.  
+- **Strength** — Adjust the force applied [[ BETA ]].  
+- **In-Game Menu** — Rly simple interface to toggle features on and off.  
 
-- Appuyez sur la touche **F5** en jeu pour afficher ou cacher le menu.
+---
 
-## Licence
+## 🕹️ How to Use ?? 
 
-Ce projet est sous licence [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](LICENSE). Vous êtes libre de le modifier et de le partager, mais vous ne pouvez pas le vendre.
+1. Install **[MelonLoader](https://melonwiki.xyz/#/?id=melonloader)**.  
+2. Place the mod `.dll` file into your game’s `Mods` folder.  
+3. Launch the game normally through MelonLoader.  
+4. Press **F5** in-game to open or close the menu.  
+
+---
+
+## 📜 License  
+
+This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](LICENSE).  
+You are free to modify and share it, but you cannot sell it.  
